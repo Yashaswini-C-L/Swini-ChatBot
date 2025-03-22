@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swini</title>
+    <link rel="icon" type="image/png" href="download.png">
+
+    <!-- google font links for styling -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- css link for styling -->
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- header section -->
+
+    <div class="container">
+      <header class="app-header">
+        <h1 class="heading">Hello there</h1>
+        <h2 class="sub-heading">How can I help you today?</h2>
+      </header>
+
+      <!-- suggestions list -->
+
+      <ul class="suggestion" style="margin-bottom: 30px; margin-left: 30px;">
+        <li class="suggestion-item">
+          <p class="text">Design a home office setup remote work under $500.</p>
+          <i class="bi bi-pencil"></i>
+        </li>
+
+        <li class="suggestion-item">
+          <p class="text">
+            How can I level up your web develop process in tech.
+          </p>
+          <i class="bi bi-code-slash"></i>
+        </li>
+
+        <li class="suggestion-item">
+          <p class="text">
+            Suggest some cool tools for debugging Javacsript code.
+          </p>
+          <i class="bi bi-filetype-js"></i>
+        </li>
+
+        <li class="suggestion-item">
+          <p class="text">
+            Create a React Js component for todo list application.
+          </p>
+          <i class="bi bi-check2-square"></i>
+        </li>
+      </ul>
+
+      <!-- chat container -->
+
+      <div class="chat-container">
+        <div class="message user-message">
+          <p class="message-text" style="margin-top: 30px;">
+            Start a new chat with Swini 👋.
+          </p>
+        </div>
+
+        <div class="message bot-message">
+          <img src="./gemini-chatbot-logo.svg" alt="" class="avatar" />
+          <p class="message-text">
+            
+          </p>
+        </div>
+      </div>
+
+      <!-- prompt container  -->
+
+      <div class="prompt-container">
+        <div class="prompt-wrapper">
+          <form action="" class="prompt-form">
+            <input
+              type="text"
+              class="prompt-input"
+              placeholder="Type your question here ..."
+              required
+            />
+            <div class="prompt-action">
+
+
+                <div class="file-upload-wrapper">
+                    <img src="./1.png" alt="" class="file-previewer">
+                    <button id="add-file-btn" class="material-symbols-rounded">
+                        <i class="bi bi-paperclip"></i>
+                      </button>
+                      <button id="cancel-file-btn active" class="material-symbols-rounded active">
+                        <i class="bi bi-x-lg"></i>
+                      </button>
+
+                </div>
+              
+              <button id="send-prompt-btn" class="material-symbols-rounded">
+                <i class="bi bi-send"></i>
+              </button>
+            </div>
+          </form>
+
+          <button id="theme-toggle-btn" class="material-symbols-rounded">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <button id="clear-chat-btn" class="material-symbols-rounded">
+            <i class="bi bi-trash"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- script link for functionality -->
+    <script src="Script.js"></script>
+  </body>
+</html>
